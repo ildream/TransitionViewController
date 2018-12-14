@@ -57,6 +57,9 @@ static const int kMargin = 20;
     if (self.view) {
         NSLog(@"----------->");
     }
+    else {
+        NSLog(@"难道真的是这样么？------");
+    }
     return nil;
 }
 
