@@ -77,12 +77,15 @@
             break;
         case UIGestureRecognizerStateChanged:
         {
-            
+            //手势改变的时候，更新percent
+            [self updateInteractiveTransition:percent];
         }
             break;
         case UIGestureRecognizerStateEnded:
         {
             self.isInteracting = NO;
+            //结束
+            [self finishInteractiveTransition];
         }
             break;
         default:
