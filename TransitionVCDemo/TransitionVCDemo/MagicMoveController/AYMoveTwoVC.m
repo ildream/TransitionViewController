@@ -54,6 +54,9 @@ static const int kMargin = 20;
 - (id<UIViewControllerInteractiveTransitioning>)navigationController:(UINavigationController *)navigationController
                          interactionControllerForAnimationController:(id<UIViewControllerAnimatedTransitioning>)animationController
 {
+    if (self.view) {
+        NSLog(@"----------->");
+    }
     return nil;
 }
 
