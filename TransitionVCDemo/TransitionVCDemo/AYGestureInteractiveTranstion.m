@@ -72,7 +72,7 @@
     switch (gesture.state) {
         case UIGestureRecognizerStateBegan:
         {
-            
+            self.isInteracting = YES;
         }
             break;
         case UIGestureRecognizerStateChanged:
@@ -82,7 +82,7 @@
             break;
         case UIGestureRecognizerStateEnded:
         {
-            
+            self.isInteracting = NO;
         }
             break;
         default:
